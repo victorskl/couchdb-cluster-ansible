@@ -1,0 +1,14 @@
+# https://gist.github.com/gwillem/4ba393dceb55e5ae276a87300f6b8e6f
+
+- hosts: couchdbs
+  gather_facts: False
+  tasks:
+  - name: Install Minimal Python
+    raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
+
+
+# Alternatively
+
+# http://docs.ansible.com/ansible/intro_installation.html
+
+# ansible couchdbs -i hosts.ini -k -K -s -u victorskl -m raw -a "apt-get install -y python-minimal"
