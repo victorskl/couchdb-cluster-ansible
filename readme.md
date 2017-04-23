@@ -138,7 +138,7 @@ This will setup CouchDB Cluster using Ansible. Software stack are:
     curl http://cadmin:password@192.168.56.101:5984/_membership
     ```
 
-    ![alt text](img/couchdb_cluster_membership.png "couchdb_cluster_membership.png")
+    ![alt text](img/couchdb_cluster_membership.png "couchdb_cluster_membership.PNG")
 
 ### Sharding
 
@@ -147,7 +147,7 @@ This will setup CouchDB Cluster using Ansible. Software stack are:
     curl -X PUT "http://cadmin:password@192.168.56.101:5984/test?q=4&n=2"
     ```
 
-    ![alt text](img/couchdb_sharding_q4_n2.png "couchdb_sharding_q4_n2.png")
+    ![alt text](img/couchdb_sharding_q4_n2.png "couchdb_sharding_q4_n2.PNG")
 
 
 * Observe the `test` database shard/replica distribution on cluster. Note: port number is **:5986**.
@@ -155,7 +155,7 @@ This will setup CouchDB Cluster using Ansible. Software stack are:
     curl -X GET "http://cadmin:password@192.168.56.101:5986/_dbs/test"
     ```
 
-    ![alt text](img/couchdb_cluster_shard_1.png "couchdb_cluster_shard_1.png")
+    ![alt text](img/couchdb_cluster_shard_1.png "couchdb_cluster_shard_1.PNG")
 
-    ![alt text](img/couchdb_cluster_shard_2.png "couchdb_cluster_shard_2.png")
+    ![alt text](img/couchdb_cluster_shard_2.png "couchdb_cluster_shard_2.PNG")
     
