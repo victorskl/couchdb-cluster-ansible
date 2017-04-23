@@ -138,7 +138,7 @@ This will setup CouchDB Cluster using Ansible. Software stack are:
     curl http://cadmin:password@192.168.56.101:5984/_membership
     ```
 
-    ![alt text](img/couchdb_cluster_membership.png "couchdb_cluster_membership.jpg")
+    ![couchdb_cluster_membership.jpg](img/couchdb_cluster_membership.jpg)
 
 ### Sharding
 
